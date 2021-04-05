@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=600">
+    <title>
+        CSS - about this site
+    </title>
+    <link rel="stylesheet" href="css/page7.css">
+    <link rel="icon" href="logo.png" />
+</head>
+<body class="ltr">
+    <div id = "logo">
+        <img src="logo.png">
+        <span>Learn CSS Layout</span>
+    </div>
+
+    <p class="content">
+        In order to make more complex layouts, we need to discuss the <code>position</code> property. It has a bunch of possible values, and their names make no sense and are impossible to remember. Let's go through them one by one, but maybe you should bookmark this page too.
+      </p>
+      
+    <h2 class="content">static</h2>
+
+    <div class="elem">
+        <span class="label">&lt;div class="static"></span>
+        <p>
+          <code>static</code> is the default value. An element with <code>position: static;</code> is not positioned in any special way. A static element is said to be <em>not positioned</em> and an element with its position set to anything else is said to be <em>positioned</em>.
+        </p>
+        <span class="endlabel">&lt;/div></span>
+      </div>
+    
+    <h2 class="content">relative</h2>
+    <div class="relative1 elem">
+        <span class="label">&lt;div class="relative1"></span>
+        <p>
+          <code>relative</code> behaves the same as <code>static</code> unless you add some extra properties.
+        </p>
+        <span class="endlabel">&lt;/div></span>
+      </div>
+      
+      <div class="relative2 elem elem-red">
+        <span class="label">&lt;div class="relative2"></span>
+        <p>
+          Setting the <code>top</code>, <code>right</code>, <code>bottom</code>, and <code>left</code> properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.
+        </p>
+        <span class="endlabel">&lt;/div></span>
+    </div>
+    
+    <h2 class="content">fixed</h2>
+    <div class="fixed elem elem-green">
+        <span class="label">&lt;div class="fixed"></span>
+        <p>
+          Hello! Don't pay attention to me yet.
+        </p>
+        <span class="endlabel">&lt;/div></span>
+    </div>
+      
+    <p class="content">
+        A fixed element is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. As with <code>relative</code>, the <code>top</code>, <code>right</code>, <code>bottom</code>, and <code>left</code> properties are used.
+    </p>
+
+
+
+      
+      
+
+        <div class="nav-wrapper">
+                <a class="nav prev" href="page6.html">Previous</a>
+                <a class="nav next" href="page8.html">Next</a>
+        </div>
+
+    <footer>
+        7 / 19
+        <p>Rizky Noviar Anwardiredja - 120510200026</p>
+    </footer>
+    
+</body>

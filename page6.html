@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=600">
+    <title>
+        CSS - about this site
+    </title>
+    <link rel="stylesheet" href="css/page6.css">
+    <link rel="icon" href="logo.png" />
+</head>
+<body class="ltr">
+    <div id = "logo">
+        <img src="logo.png">
+        <span>Learn CSS Layout</span>
+    </div>
+
+    <p class="content">
+        The original box model behavior was eventually considered unintuitive, so a new CSS property called <code>box-sizing</code> was created. When you set <code>box-sizing: border-box;</code> on an element, the padding and border of that element no longer increase its width. Here is the same example as the previous page, but with <code>box-sizing: border-box;</code> on both elements:
+      </p>
+      
+      <div class="simple elem">
+        <span class="label">&lt;div class="simple"></span>
+        <p>
+          We're the same size now!
+        </p>
+        <span class="endlabel">&lt;/div></span>
+      </div>
+      
+      <div class="fancy elem">
+        <span class="label">&lt;div class="fancy"></span>
+        <p>
+          Hooray!
+        </p>
+        <span class="endlabel">&lt;/div></span>
+      </div>
+      
+      <p class="content">
+        Since this is so much better, some authors want all elements on all their pages to always work this way. Such authors put the following CSS on their pages:
+      </p>
+      <p class="content">
+        This ensures that all elements are always sized in this more intuitive way.
+      </p>
+      
+      <p class="content">
+        Since <code>box-sizing</code> is pretty new, you should use the <code>-webkit-</code> and <code>-moz-</code> prefixes for now, as I have in these examples. This technique enables experimental features in specific browsers. Also, keep in mind that this one is <a href="http://caniuse.com/#search=box-sizing">IE8+</a>.
+      </p>
+      
+
+
+
+        <div class="nav-wrapper">
+                <a class="nav prev" href="page5.html">Previous</a>
+                <a class="nav next" href="page7.html">Next</a>
+        </div>
+
+    <footer>
+        6 / 19
+        <p>Rizky Noviar Anwardiredja - 120510200026</p>
+    </footer>
+    
+</body>
