@@ -5,7 +5,7 @@
     <title>
         CSS - about this site
     </title>
-    <link rel="stylesheet" href="css/page10.css">
+    <link rel="stylesheet" href="css/page12.css">
     <link rel="icon" href="logo.png" />
 </head>
 <body class="ltr">
@@ -15,50 +15,64 @@
     </div>
 
     <p class="content">
-        The <code>clear</code> property is important for controlling the behavior of floats. Compare these two examples:
+      It's very common to do entire layouts using <code>float</code>. Here is the same layout we did with <code>position</code> earlier, but using <code>float</code> instead.
     </p>
 
-    <p class="content">
-        <div class="box elem">
-          <span class="label">&lt;div class="box"></span>
-          <p>
-            I feel like I'm floating!
-          </p>
-          <span class="endlabel">&lt;/div></span>
-    </div>
-    <section class="elem elem-green">
+    <div class="clearfix elem">
+      <span class="label">&lt;div class="clearfix"></span>
+    
+      <nav class="elem elem-red">
+        <span class="label">&lt;nav></span>
+        <ul>
+          <li>
+            <a href="float-layout.html">Home</a>
+          </li>
+          <li>
+            <a href="float-layout.html">Menu</a>
+          </li>
+          <li>
+            <a href="float-layout.html">List</a>
+          </li>
+          <li>
+            <a href="float-layout.html">Array</a>
+          </li>
+          <li>
+            <a href="float-layout.html">Where</a>
+          </li>
+          <li>
+            <a href="float-layout.html">Contact</a>
+          </li>
+        </ul>
+        <span class="endlabel">&lt;/nav></span>
+      </nav>
+    
+      <section class="elem elem-green">
         <span class="label">&lt;section></span>
         <p>
-          In this case, the <code>section</code> element is actually after the <code>div</code>. However, since the <code>div</code> is floated to the left, this is what happens: the text in the <code>section</code> is floated around the <code>div</code> and the <code>section</code> surrounds the whole thing. What if we wanted the <code>section</code> to actually appear after the floated element?
-        </p>
-        <span class="endlabel">&lt;/section></span>
-    </section>
-    <p class="content">
-        <div class="box elem">
-          <span class="label">&lt;div class="box"></span>
-          <p>
-            I feel like I'm floating!
-          </p>
-          <span class="endlabel">&lt;/div></span>
-    </div>
-    <section class="elem elem-green after-box">
-        <span class="label">&lt;section class="after-box"></span>
-        <p>
-          Using <code>clear</code> we have now moved this section down below the floated <code>div</code>. You use the value <code>left</code> to clear elements floated to the left. You can also clear <code>right</code> and <code>both</code>.
+          This example works just like the last one. Notice we put a <code>clearfix</code> on the container. It's not needed in this example, but it would be if the <code>nav</code> was longer than the non-floated content.
         </p>
         <span class="endlabel">&lt;/section></span>
       </section>
-    </p>
+    
+      <section class="elem elem-green ipsum">
+        <span class="label">&lt;section></span>
+        <p>
+          Universitas Padjajaran.
+        </p>
+        <span class="endlabel">&lt;/section></span>
+      </section>
+    
+    </div>
       
 
 
         <div class="nav-wrapper">
-                <a class="nav prev" href="page9.html">Previous</a>
-                <a class="nav next" href="page11.html">Next</a>
+                <a class="nav prev" href="page11.html">Previous</a>
+                <a class="nav next" href="page13.html">Next</a>
         </div>
 
     <footer>
-        10 / 19
+        12 / 19
         <p>Rizky Noviar Anwardiredja - 120510200026</p>
     </footer>
     

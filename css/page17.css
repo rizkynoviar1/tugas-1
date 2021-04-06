@@ -7,8 +7,8 @@ body {
     font-family: Arial;
     background-color: #ededed;
   }
-
-a.nav {
+  
+  a.nav {
     background-color: #d64078;
     color: white;
     border-radius: .3em;
@@ -26,29 +26,29 @@ a.nav {
          -o-transition: all 0.1s ease-out;  
             transition: all 0.1s ease-out; 
   }
-
-a.nav.prev {
+  
+  a.nav.prev {
     margin-left: 0;
-}
-
-a.nav.next {
+  }
+  
+  a.nav.next {
     margin-right: 0;
-}
-
-a.nav:hover {
+  }
+  
+  a.nav:hover {
   background-color: #c63b6f;
-}
-
-a.nav:active {
+  }
+  
+  a.nav:active {
   border-bottom: solid #b03060 1px;
   top: 4px;
   -webkit-transition: all 0 ease-out;  
      -moz-transition: all 0 ease-out;  
        -o-transition: all 0 ease-out;  
           transition: all 0 ease-out;  
-}
-
-.nav-wrapper {
+  }
+  
+  .nav-wrapper {
     text-align: center;
     padding: 1em 0;
     clear: both;
@@ -64,14 +64,14 @@ a.nav:active {
   .next {
     right: 1em;
   }
-
-#logo {
+  
+  #logo {
     text-align: center;
     background-color: #ededed;
     padding: 1em 0;
-}
-
-
+  }
+  
+  
   #logo a {
     text-decoration: none;
     color: #414142;
@@ -92,23 +92,23 @@ a.nav:active {
     font-family: 'Bree Serif', serif;
     margin-left: .2em;
   }
-
-.content {
+  
+  .content {
     max-width: 600px;
     margin: 1em auto;
   }
-
-#container {
+  
+  #container {
     padding: 1em;
     margin: 0 0 1em 0;
     background-color: white;
   }
-
-footer {
+  
+  footer {
     text-align: center;
   }
-
-.elem {
+  
+  .elem {
     border: solid red 10px;
     position: relative;
   }
@@ -116,55 +116,55 @@ footer {
     max-width: min-content;
   }
   
-.elem p {
+  .elem p {
     padding: 0 1em;
   }
   
-.elem-inline .label, .elem-inline .endlabel {
+  .elem-inline .label, .elem-inline .endlabel {
     position: static;
   }
-
-.label, .endlabel {
+  
+  .label, .endlabel {
     position: absolute;
     background-color: #6AC5AC;
     color: #414142;
     line-height: 1em;
   }
   
-.label {
+  .label {
     top: 0;
     left: 0;
     padding: 0 3px 3px 0;
   }
   
-.endlabel {
+  .endlabel {
     right: 0;
     bottom: 0;
     padding: 3px 0 0 3px;
   }
-
-.elem-green {
+  
+  .elem-green {
     border: solid #FDC72F 3px;
   }
-.elem-green > .label, .elem-green > .endlabel{
+  .elem-green > .label, .elem-green > .endlabel{
     background-color: #FDC72F;
   }
   
-.elem-red {
+  .elem-red {
     border: solid #D64078 3px;
   }
-.elem-red > .label, .elem-red > .endlabel{
+  .elem-red > .label, .elem-red > .endlabel{
     color: white;
     background-color: #D64078;
   }
   
-.elem-orange {
+  .elem-orange {
     border: solid #96C02E 3px;
   }
-.elem-orange > .label, .elem-orange > .endlabel{
+  .elem-orange > .label, .elem-orange > .endlabel{
     background-color: #96C02E;
   }
-
+  
   .container {
     position: relative;
   }
@@ -174,7 +174,7 @@ footer {
     width: 200px;
   }
   section {
-
+  
     margin-left: 200px;
   }
   footer.elem {
@@ -187,17 +187,7 @@ footer {
     margin: 0;
     z-index: 1;
   }
-
-.box {
-    float: left;
-    width: 200px;
-    height: 100px;
-    margin: 1em;
-  }
-
-  .clearfix {
-    overflow: auto;
-  }
+  
   .clearfix:after {
     content: ".";
     display: block;
@@ -205,10 +195,41 @@ footer {
     clear: both;
     visibility: hidden;
   }
-  nav {
-    float: left;
-    width: 200px;
+  article img {
+    float: right;
+    width: 50%;
   }
-  section {
-    margin-left: 200px;
+
+  @media (min-width:600px) {
+    nav.elem {
+      float: left;
+      width: 25%;
+    }
+    section {
+      margin-left: 25%;
+    }
+  }
+  @media (max-width:599px) {
+    nav li {
+      display: inline;
+    }
+  }
+  nav.elem {
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+  }
+  .column {
+    display: inline-block;
+    vertical-align: top;
+    width: 75%;
+  }
+  .three-column {
+    padding: 1em;
+    -moz-column-count: 3;
+    -moz-column-gap: 1em;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 1em;
+    column-count: 3;
+    column-gap: 1em;
   }
